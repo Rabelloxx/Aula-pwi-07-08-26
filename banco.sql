@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS formulario_db
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
+USE formulario_db;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    idade INT NOT NULL,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
